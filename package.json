@@ -1,0 +1,19 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "\"\"\u001bO\u001bUsing Jasmine framework to implement Test-Driven Development\"",
+  "main": "prime.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QUDUSKUNLE/abv-bc-SLC.git"
+  },
+  "author": "\"\"\u001bQudus YEKEEN\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QUDUSKUNLE/abv-bc-SLC/issues"
+  },
+  "homepage": "https://github.com/QUDUSKUNLE/abv-bc-SLC#readme"
+}

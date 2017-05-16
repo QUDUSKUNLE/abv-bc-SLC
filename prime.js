@@ -16,24 +16,27 @@ getPrimes = (n) => {
     } else if (n === undefined) {
         return "No input provided";
     } else {
-        let array = [],
-            upperLimit = Math.sqrt(n),
-            output = [];
+        let Num = [],
+            maxValue = Math.sqrt(n),
+            result = [];
         for (let i = 1; i <= n; i++) {
-            array.push(true);
+            Num.push(true);
         }
-        for (let i = 2; i <= upperLimit; i++) {
-            if (array[i]) {
+        for (let i = 2; i <= maxValue; i++) {
+            if (Num[i]) {
                 for (let j = i * i; j < n; j += i) {
-                    array[j] = false;
+                    Num[j] = false;
                 }
             }
         }
         for (let i = 2; i < n; i++) {
-            if (array[i]) {
-                output.push(i);
+            if (Num[i]) {
+                result.push(i);
             }
         }
-        return output;
+        return result;
     }
 }
+
+
+module.exports = getPrimes;
